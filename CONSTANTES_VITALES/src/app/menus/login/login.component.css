@@ -1,0 +1,149 @@
+.titulo{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 500%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #06281E;
+}
+
+#form-email{
+  border-radius: 2%;
+  color: rgb(160, 157, 157);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+#form-contraseña{
+  border-radius: 2%;
+  color: rgb(160, 157, 157);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+#btn-entrar{
+  text-decoration: none;
+  background-color: #495867;
+  color: white;
+  border: none;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+hr{
+  color: white;
+  width: 500px;
+  height: 2px;margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.olv-con{
+  text-decoration: underline;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #06281E;
+}
+
+a{
+  text-decoration: none;
+}
+
+.recordar{
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#c1 input:checked ~ .checkmark {
+  background-color: rgb(54, 172, 144);
+  }
+
+  /* Contenedor */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* escondemos el default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* creamos un custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* Al pasar el mouse encima, lo ponemos gris */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* creamos el marcador (escondido al no seleccionar) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* mostramos el marcador al seleccionar */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* estilo del marcador */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

@@ -1,0 +1,26 @@
+*{
+  line-height: 1.3;
+  font-family: Inter;
+}
+body{
+  background-image: url(assets/fondopant.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/*
+app-navbar{
+  position: fixed;
+  top: 0px;
+  height: 4rem;
+  z-index: 2;
+} */
+
+
+app-side-nav{
+  background-color: #07553E;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  border: 1px solid white;
+}

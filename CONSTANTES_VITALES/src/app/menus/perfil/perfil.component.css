@@ -1,0 +1,26 @@
+.tocho{
+  margin-left: 250px;
+  color: white;
+}
+
+.datos{
+  margin-left: 2%;
+  margin-top: 10%;
+  position: absolute;
+}
+
+.nia{
+  position: relative;
+  float: left;
+}
+
+.n-nia{
+  position: relative;
+  float: left;
+  margin-left: 20px;
+}
+
+.nom_nia{
+  font-weight: bold;
+}
+

@@ -12,7 +12,8 @@ import { CodigoMonitorComponent } from './codigo-monitor/codigo-monitor.componen
     exports: [
         PagInicioComponent,
         LoginComponent,
-        PerfilComponent
+        PerfilComponent,
+        CodigoMonitorComponent
     ],
     declarations: [
         PagInicioComponent,

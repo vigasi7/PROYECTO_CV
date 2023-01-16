@@ -4,31 +4,32 @@ main{
   z-index: 0;
 }
 
-#form-clave-monitor{
-  border-radius: 2%;
-  color: rgb(160, 157, 157);
-  margin-left: 525px;
-  width: 600px;
-  height: 70px;
-  margin-top: 200px;
-  font-size: 20px;
-}
-
-#btn-acceder{
-  background-color: #495867;
-  color: white;
+.btn-princ{
+  background-color: #07553E;
   border: none;
-  margin-left: 525px;
-  width: 600px;
-  height: 40px;
-  margin-top: 30%;
-  font-size: 20px;
+  width: 500px;
+  height: 100px;
+  margin-left: 700%;
+  margin-top: 35%;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-hr{
-  color: white;
-  width: 600px;
-  height: 2px;
-  margin-left: 525px;
-  margin-top: 50%;
+.btn-cs{
+  background-color: rgba(7, 85, 62, 0.5);
+  border: none;
+  width: 500px;
+  height: 70px;
+  margin-left: 700%;
+  margin-top: 100%;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pag_inicio{
+  position: relative;
 }

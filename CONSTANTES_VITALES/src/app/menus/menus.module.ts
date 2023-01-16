@@ -4,6 +4,7 @@ import { PagInicioComponent } from './pag-inicio/pag-inicio.component';
 import { UtilidadesModule } from '../utilidades/utilidades.module';
 import { LoginComponent } from './login/login.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { CodigoMonitorComponent } from './codigo-monitor/codigo-monitor.component';
 
 
 
@@ -16,7 +17,8 @@ import { PerfilComponent } from './perfil/perfil.component';
     declarations: [
         PagInicioComponent,
         LoginComponent,
-        PerfilComponent
+        PerfilComponent,
+        CodigoMonitorComponent
     ],
     imports: [
         CommonModule,

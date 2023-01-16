@@ -1,4 +1,27 @@
-<div class="side-nav-content">
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fas fa-solid fa-bars"></i></button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">PROFESOR</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <p class="img_user"></p>
+  <div class="offcanvas-body">
+    <li class="nav-list-item"*ngFor="let item of list">
+
+      <i class="{{item.icon}} icons"></i><i>     </i>
+      <span class="opc_menu">
+        <a href="{{item.direccion}}">{{item.name}}</a>
+      </span>
+      <tr></tr>
+    </li>
+  </div>
+</div>
+
+
+
+
+<!-- <div class="side-nav-content">
 
   <ul class="nav-list">
 
@@ -24,4 +47,4 @@
 
   </ul>
 
-</div>
+</div> -->

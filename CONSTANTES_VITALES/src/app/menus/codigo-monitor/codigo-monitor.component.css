@@ -1,0 +1,28 @@
+#form-clave-monitor{
+  border-radius: 2%;
+  color: rgb(160, 157, 157);
+  margin-left: 525px;
+  width: 600px;
+  height: 70px;
+  margin-top: 200px;
+  font-size: 20px;
+}
+
+#btn-acceder{
+  background-color: #495867;
+  color: white;
+  border: none;
+  margin-left: 525px;
+  width: 600px;
+  height: 40px;
+  margin-top: 30%;
+  font-size: 20px;
+}
+
+hr{
+  color: white;
+  width: 600px;
+  height: 2px;
+  margin-left: 525px;
+  margin-top: 50%;
+}

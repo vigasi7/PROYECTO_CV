@@ -6,6 +6,7 @@ body{
   background-image: url(assets/fondopant.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #1AA179;
 }
 /*
 app-navbar{

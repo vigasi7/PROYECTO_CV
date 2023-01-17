@@ -1,16 +1,13 @@
-main{
-  position: absolute;
-  width: 100px;
-  z-index: 0;
-}
+
 
 .btn-princ{
   background-color: #07553E;
   border: none;
   width: 500px;
   height: 100px;
-  margin-left: 700%;
-  margin-top: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
   font-size: 30px;
   align-items: center;
   display: flex;
@@ -22,8 +19,9 @@ main{
   border: none;
   width: 500px;
   height: 70px;
-  margin-left: 700%;
-  margin-top: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
   font-size: 30px;
   align-items: center;
   display: flex;

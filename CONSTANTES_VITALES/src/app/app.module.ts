@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { NgChartsModule } from 'ng2-charts';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +17,8 @@ import { MenusModule } from "./menus/menus.module";
   ],
   imports: [
     BrowserModule,
+
+    NgChartsModule,
 
     FontAwesomeModule,
 

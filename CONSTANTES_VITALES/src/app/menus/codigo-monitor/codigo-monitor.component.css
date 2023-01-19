@@ -1,22 +1,38 @@
 #form-clave-monitor{
   border-radius: 2%;
   color: rgb(160, 157, 157);
-  margin-left: 525px;
   width: 600px;
   height: 70px;
-  margin-top: 200px;
   font-size: 20px;
+  border-radius: .25rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-#btn-acceder{
+.btn-acceder{
   background-color: #495867;
   color: white;
   border: none;
-  margin-left: 525px;
   width: 600px;
   height: 40px;
-  margin-top: 30%;
   font-size: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 hr{

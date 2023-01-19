@@ -5,6 +5,7 @@ import { UtilidadesModule } from '../utilidades/utilidades.module';
 import { LoginComponent } from './login/login.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { CodigoMonitorComponent } from './codigo-monitor/codigo-monitor.component';
+import { MonitorComponent } from './monitor/monitor.component';
 
 
 
@@ -13,13 +14,15 @@ import { CodigoMonitorComponent } from './codigo-monitor/codigo-monitor.componen
         PagInicioComponent,
         LoginComponent,
         PerfilComponent,
-        CodigoMonitorComponent
+        CodigoMonitorComponent,
+        MonitorComponent
     ],
     declarations: [
         PagInicioComponent,
         LoginComponent,
         PerfilComponent,
-        CodigoMonitorComponent
+        CodigoMonitorComponent,
+        MonitorComponent
     ],
     imports: [
         CommonModule,

@@ -1,18 +1,40 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SideNavComponent } from './side-nav/side-nav.component';
+
 import { GraficosComponent } from './graficos/graficos.component';
+
+
+import { PerfilesMonitorComponent } from './perfiles-monitor/perfiles-monitor.component';
+import { ParametrosMonitorComponent } from './parametros-monitor/parametros-monitor.component';
+import { MenuLateralAlumnoComponent } from './menu-lateral-alumno/menu-lateral-alumno.component';
+import { MenuLateralProfesorComponent } from './menu-lateral-profesor/menu-lateral-profesor.component';
+import { MenuLateralAdminComponent } from './menu-lateral-admin/menu-lateral-admin.component';
+import { GeneradorCodigoMonitorComponent } from './generador-codigo-monitor/generador-codigo-monitor.component';
+import { VentanasEmergentesModule } from './ventanas-emergentes/ventanas-emergentes.module';
 
 
 
 @NgModule({
   exports: [
-    SideNavComponent,
-    GraficosComponent
+    GraficosComponent,
+
+    PerfilesMonitorComponent,
+    ParametrosMonitorComponent,
+    MenuLateralAlumnoComponent,
+    MenuLateralProfesorComponent,
+    MenuLateralAdminComponent,
+    GeneradorCodigoMonitorComponent,
+    VentanasEmergentesModule
   ],
   declarations: [
-    SideNavComponent,
-    GraficosComponent
+    GraficosComponent,
+
+    PerfilesMonitorComponent,
+    ParametrosMonitorComponent,
+    MenuLateralAlumnoComponent,
+    MenuLateralProfesorComponent,
+    MenuLateralAdminComponent,
+    GeneradorCodigoMonitorComponent
   ],
   imports: [
     CommonModule

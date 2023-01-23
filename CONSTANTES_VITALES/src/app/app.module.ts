@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { UtilidadesModule } from './utilidades/utilidades.module';
-import { MenusModule } from "./menus/menus.module";
+import { PaginasModule } from "./paginas/paginas.module";
 
 @NgModule({
   declarations: [
@@ -25,10 +25,10 @@ import { MenusModule } from "./menus/menus.module";
     AppRoutingModule,
 
     UtilidadesModule,
-    MenusModule
+    PaginasModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [MenusModule]
+  exports: [PaginasModule]
 })
 export class AppModule { }

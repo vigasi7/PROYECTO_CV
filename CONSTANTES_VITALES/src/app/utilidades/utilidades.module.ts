@@ -11,6 +11,7 @@ import { MenuLateralProfesorComponent } from './menu-lateral-profesor/menu-later
 import { MenuLateralAdminComponent } from './menu-lateral-admin/menu-lateral-admin.component';
 import { GeneradorCodigoMonitorComponent } from './generador-codigo-monitor/generador-codigo-monitor.component';
 import { VentanasEmergentesModule } from './ventanas-emergentes/ventanas-emergentes.module';
+import { CerrarSesionComponent } from './ventanas-emergentes/cerrar-sesion/cerrar-sesion.component';
 
 
 
@@ -24,7 +25,7 @@ import { VentanasEmergentesModule } from './ventanas-emergentes/ventanas-emergen
     MenuLateralProfesorComponent,
     MenuLateralAdminComponent,
     GeneradorCodigoMonitorComponent,
-    VentanasEmergentesModule
+
   ],
   declarations: [
     GraficosComponent,
@@ -34,7 +35,8 @@ import { VentanasEmergentesModule } from './ventanas-emergentes/ventanas-emergen
     MenuLateralAlumnoComponent,
     MenuLateralProfesorComponent,
     MenuLateralAdminComponent,
-    GeneradorCodigoMonitorComponent
+    GeneradorCodigoMonitorComponent,
+
   ],
   imports: [
     CommonModule

@@ -5,6 +5,7 @@ import { OcultarEdComponent } from './ocultar-ed/ocultar-ed.component';
 import { MonitorPersonalizadoComponent } from './monitor-personalizado/monitor-personalizado.component';
 import { SalirMonitorComponent } from './salir-monitor/salir-monitor.component';
 import { EliminarEdComponent } from './eliminar-ed/eliminar-ed.component';
+import { CerrarSesionComponent } from './cerrar-sesion/cerrar-sesion.component';
 
 
 
@@ -14,7 +15,16 @@ import { EliminarEdComponent } from './eliminar-ed/eliminar-ed.component';
     OcultarEdComponent,
     MonitorPersonalizadoComponent,
     SalirMonitorComponent,
-    EliminarEdComponent
+    EliminarEdComponent,
+    CerrarSesionComponent
+  ],
+  exports:[
+    PassModificadaComponent,
+    OcultarEdComponent,
+    MonitorPersonalizadoComponent,
+    SalirMonitorComponent,
+    EliminarEdComponent,
+    CerrarSesionComponent
   ],
   imports: [
     CommonModule

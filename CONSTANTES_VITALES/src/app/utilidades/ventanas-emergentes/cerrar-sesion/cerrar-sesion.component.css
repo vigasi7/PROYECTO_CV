@@ -1,0 +1,35 @@
+.modal-content{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  width: 120%;
+}
+
+.modal-title{
+  color: red;
+  font-weight: bold;
+}
+
+.modal-footer{
+  justify-content: center;
+}
+
+.modal-header{
+  justify-content: center;
+}
+
+.modal-body{
+  justify-content: center;
+  display: flex;
+}
+
+#btn-cancelar{
+  background-color: #07553E;
+  border: none;
+}
+
+#btn-cerses{
+  background-color: #07553E;
+  border: none;
+}

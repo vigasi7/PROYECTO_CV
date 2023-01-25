@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./pagina-inicio.component.css']
 })
 export class PaginaInicioComponent {
-  sideNavStatus: boolean = false;
+
 }

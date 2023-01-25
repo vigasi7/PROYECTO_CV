@@ -39,8 +39,8 @@ button:hover{
 
 .img_user{
   border: 1px solid white;
-  width: 150px;
-  height: 150px;
+  width: 30%;
+  height: 20%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -49,6 +49,11 @@ button:hover{
   background-size: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+p{
+  margin-top: -10%;
+  margin-bottom: 0;
 }
 
 .nav-list-item{

@@ -46,3 +46,13 @@ g1{
 
   border-radius: 2px;
 }
+
+.piePantalla{
+  display: flex;
+}
+
+#fullScreen{
+  position: fixed;
+  margin-left: 93%;
+  margin-top: 0.5%;
+}

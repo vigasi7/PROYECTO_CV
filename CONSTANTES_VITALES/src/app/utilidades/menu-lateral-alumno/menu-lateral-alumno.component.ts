@@ -11,7 +11,7 @@ export class MenuLateralAlumnoComponent {
       number: '1',
       name: 'MONITOR',
       icon: 'fas fa-sharp fa-solid fa-desktop text-light fa-3x',
-      direccion: '/home',
+      direccion: '/monitorCodigo',
     },
     {
       number: '2',

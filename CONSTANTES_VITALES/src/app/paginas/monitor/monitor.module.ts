@@ -17,7 +17,7 @@ import { UtilidadesModule } from 'src/app/utilidades/utilidades.module';
   ],
   imports: [
     CommonModule,
-    UtilidadesModule
+    UtilidadesModule,
   ]
 })
 export class MonitorModule { }

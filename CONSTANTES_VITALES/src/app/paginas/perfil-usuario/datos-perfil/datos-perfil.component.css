@@ -1,11 +1,7 @@
-.tocho{
+.header{
   margin-left: 6%;
   color: white;
   margin-top: 3%;
-}
-
-.datos{
-  position: absolute;
 }
 
 .nia{
@@ -23,3 +19,30 @@
   font-weight: bold;
 }
 
+.num_nia{
+  font-weight: bold;
+}
+
+.nombre-user{
+  font-weight: bold;
+}
+
+hr{
+  color: white;
+  height: 2px;
+  opacity: 1;
+}
+table{
+  vertical-align: middle;
+  margin-left: 6%;
+  width: 90%;
+}
+
+tbody{
+  color: white;
+}
+
+.datos{
+  font-weight: bold;
+  display: inherit;
+}

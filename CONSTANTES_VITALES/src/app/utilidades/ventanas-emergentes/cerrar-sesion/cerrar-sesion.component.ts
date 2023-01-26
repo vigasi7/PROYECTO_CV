@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'venemer-cerrar-sesion',
+  selector: 'ventana-cerrar-sesion',
   templateUrl: './cerrar-sesion.component.html',
   styleUrls: ['./cerrar-sesion.component.css']
 })

@@ -7,6 +7,7 @@ import { PaginaInicioComponent } from './paginas/pagina-inicio/pagina-inicio/pag
 import { DatosPerfilComponent } from './paginas/perfil-usuario/datos-perfil/datos-perfil.component';
 import { CodigoMonitorAlumnoComponent } from "./paginas/monitor/codigo-monitor-alumno/codigo-monitor-alumno.component";
 import { MonitorAlumnoComponent } from './paginas/monitor/monitor-alumno/monitor-alumno.component';
+import { CambiarPassComponent } from './paginas/perfil-usuario/cambiar-pass/cambiar-pass.component';
 
 const routes: Routes = [{
   path: '',
@@ -17,6 +18,7 @@ const routes: Routes = [{
 {path: 'login', component: LoginComponent},
 {path: 'home', component: PaginaInicioComponent},
 {path: 'perfil', component: DatosPerfilComponent},
+{path: 'cambiarContraseña', component: CambiarPassComponent},
 {path: 'monitorCodigo', component: CodigoMonitorAlumnoComponent},
 {path: 'monitor', component: MonitorAlumnoComponent}
 ];

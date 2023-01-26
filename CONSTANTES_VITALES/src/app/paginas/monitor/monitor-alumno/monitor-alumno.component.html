@@ -3,11 +3,15 @@
   <menu-lateral-alumno></menu-lateral-alumno>
 
   <div class="monitor">
-    <p class="cod_mon">CÓDIGO MONITOR:<br>ABCD1234 </p>
+    <p class="cod_mon">CÓDIGO MONITOR:<br><generador-codigo-monitor></generador-codigo-monitor> </p>
     <div class="constantes">
       <app-graficos></app-graficos>
     </div>
-    <a href="/home" class="cerrar_mon" type="button">Cerrar monitor</a>
+    <div class='piePantalla'>
+      <a href="/home" class="cerrar_mon" type="button">Cerrar monitor</a>
+      <i class="fas fa-solid fa-expand fa-3x" id="fullScreen"></i>
+    </div>
+
   </div>
 
 </div>

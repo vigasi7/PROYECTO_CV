@@ -1,0 +1,58 @@
+.monitor{
+  background-color: white;
+  height: 480px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+g1{
+  width: 400;
+  height: 300;
+}
+
+.cod_mon{
+  font-size: 20px;
+  padding-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.constantes{
+  background-color: black;
+  height: 70%;
+  margin-top: 1%;
+}
+
+.cerrar_mon{
+  text-decoration: none;
+  background-color: #1AA179;
+  color: white;
+
+  border: none;
+  width: 150px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 2px;
+}
+
+.piePantalla{
+  display: flex;
+}
+
+#fullScreen{
+  position: fixed;
+  margin-left: 93%;
+  margin-top: 0.5%;
+}

@@ -1,0 +1,50 @@
+<div class="container-fluid g-0" id="pag_inicio" *ngFor="let item of list">
+  <!-- <app-navbar (sideNavToggled)="sideNavStatus = $event;"></app-navbar> -->
+    <menu-lateral-alumno></menu-lateral-alumno>
+
+    <div class="header">
+
+      <div class="datos-header">
+        <div class="nia">
+          <h1 class="nom_nia">NIA: </h1>
+        </div>
+        <div class="n-nia">
+          <h1 class="num_nia"> {{item.nia}}</h1>
+        </div>
+        <br><br><br>
+        <div class="nombre">
+          <h1 class="nombre-user">{{item.nombreCompleto}}</h1>
+        </div>
+      </div>
+
+    </div>
+
+    <hr><br>
+
+    <table class="table table-sm table-borderless">
+
+      <tbody>
+        <tr>
+          <td><i class="{{item.iconNombre}}"></i></td>
+          <td><h4 class="datos">{{item.nombre}}</h4></td>
+          <td><i class="{{item.iconCorreo}}"></i></td>
+          <td><h4 class="datos">{{item.correo}}</h4></td>
+        </tr>
+        <br><br>
+        <tr>
+          <td><i class="{{item.iconApellido}}"></i></td>
+          <td><h4 class="datos">{{item.apellido}}</h4></td>
+          <td><i class="{{item.iconCurso}}"></i></td>
+          <td><h4 class="datos">{{item.curso}}</h4></td>
+        </tr>
+        <br><br>
+        <tr>
+          <td><i class="{{item.iconContrasenya}}"></i></td>
+          <td><h4 class="datos">{{item.contrasenya}}  </h4><a href="/cambiarContraseña"><i class="fas fa-solid fa-pen text-light"></i></a></td>
+          <td><i class="{{item.iconTelefono}}"></i></td>
+          <td><h4 class="datos">{{item.telefono}}</h4></td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>

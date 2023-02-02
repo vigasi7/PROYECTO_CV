@@ -17,7 +17,7 @@ export class MenuLateralAlumnoComponent {
       number: '2',
       name: 'ESPACIO DIDÁCTICO',
       icon: 'fas fa-sharp fa-solid fa-book text-light fa-3x',
-      direccion: '/home',
+      direccion: '/ed',
     },
     {
       number: '3',

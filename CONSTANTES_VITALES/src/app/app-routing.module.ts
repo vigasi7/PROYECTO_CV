@@ -8,6 +8,7 @@ import { DatosPerfilComponent } from './paginas/perfil-usuario/datos-perfil/dato
 import { CodigoMonitorAlumnoComponent } from "./paginas/monitor/codigo-monitor-alumno/codigo-monitor-alumno.component";
 import { MonitorAlumnoComponent } from './paginas/monitor/monitor-alumno/monitor-alumno.component';
 import { CambiarPassComponent } from './paginas/perfil-usuario/cambiar-pass/cambiar-pass.component';
+import { EdAlumnoComponent } from './paginas/espacio-didactico/ed-alumno/ed-alumno.component';
 
 const routes: Routes = [{
   path: '',
@@ -20,7 +21,8 @@ const routes: Routes = [{
 {path: 'perfil', component: DatosPerfilComponent},
 {path: 'cambiarContraseña', component: CambiarPassComponent},
 {path: 'monitorCodigo', component: CodigoMonitorAlumnoComponent},
-{path: 'monitor', component: MonitorAlumnoComponent}
+{path: 'monitor', component: MonitorAlumnoComponent},
+{path: 'ed', component: EdAlumnoComponent}
 ];
 
 

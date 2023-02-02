@@ -39,6 +39,6 @@ hr{
   color: white;
   width: 600px;
   height: 2px;
-  margin-left: 525px;
-  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }

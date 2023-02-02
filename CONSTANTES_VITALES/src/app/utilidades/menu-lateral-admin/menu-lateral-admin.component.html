@@ -1,1 +1,13 @@
-<p>menu-lateral-admin works!</p>
+<div *ngIf="alumnos!=null; else espera">
+  <table border="1">
+    <tr>
+      <td>Codigo</td><td>Descripcion</td><td>Precio</td>
+    </tr>
+    <tr *ngFor="let alu of alumnos">
+      <td>{{alu.dniAlumno}}</td>
+      <td>{{alu.nombreAlumno}}</td>
+      <td>{{alu.apellidosAlumno}}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #espera>Esperando datos...</ng-template>

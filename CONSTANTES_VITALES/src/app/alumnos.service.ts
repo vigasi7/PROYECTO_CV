@@ -9,6 +9,6 @@ export class AlumnosService {
   constructor(private http: HttpClient) { }
 
   retornar() {
-    return this.http.get("http://localhost/adminer-4.8.1-mysql.php?username=root&db=constantes_vitales&table=alumnos");
+    return this.http.get("http://localhost/proyecto_cv/cv/public/api/listaProfesores");
   }
 }

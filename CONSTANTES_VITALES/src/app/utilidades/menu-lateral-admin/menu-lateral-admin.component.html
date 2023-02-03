@@ -1,12 +1,12 @@
-<div *ngIf="alumnos!=null; else espera">
+<div *ngIf="profesores!=null; else espera">
   <table border="1">
     <tr>
       <td>Codigo</td><td>Descripcion</td><td>Precio</td>
     </tr>
-    <tr *ngFor="let alu of alumnos">
-      <td>{{alu.dniAlumno}}</td>
-      <td>{{alu.nombreAlumno}}</td>
-      <td>{{alu.apellidosAlumno}}</td>
+    <tr *ngFor="let prof of profesores">
+      <td>{{prof.dniProfesor}}</td>
+      <td>{{prof.nombreProfesor}}</td>
+      <td>{{prof.apellidosPersona}}</td>
     </tr>
   </table>
 </div>

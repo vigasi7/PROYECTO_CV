@@ -6,6 +6,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+// import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { UtilidadesModule } from './utilidades/utilidades.module';
@@ -25,6 +26,8 @@ import { PaginasModule } from "./paginas/paginas.module";
     HttpClientModule,
 
     AppRoutingModule,
+    // FormsModule,
+
 
     UtilidadesModule,
     PaginasModule

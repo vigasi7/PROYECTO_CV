@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AlumnosService } from '../../alumnos.service';
+import { ProfesoresService } from "../../profesores.service";
 
 
 @Component({
@@ -9,16 +10,16 @@ import { AlumnosService } from '../../alumnos.service';
 })
 export class MenuLateralAdminComponent {
 
-  alumnos: any;
+  profesores: any;
 
-  constructor(private alumnosService: AlumnosService){
+  constructor(private profesoresService: ProfesoresService){
 
   }
 
 
   ngOnInit() {
-    this.alumnosService.retornar()
-      .subscribe( result =>  this.alumnos = result)
+    this.profesoresService.retornar()
+      .subscribe( result =>  this.profesores = result)
   }
 
 }

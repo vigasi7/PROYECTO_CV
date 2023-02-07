@@ -1,6 +1,7 @@
 *{
   line-height: 1.3;
-  font-family: Inter;
+  /* font-family: Inter; */
+  font-family: var(--bs-font-sans-serif);
 }
 body{
   background-image: url(assets/fondopant.png);

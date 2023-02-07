@@ -10,16 +10,36 @@ import { ProfesoresService } from "../../profesores.service";
 })
 export class MenuLateralAdminComponent {
 
-  profesores: any;
-
-  constructor(private profesoresService: ProfesoresService){
-
-  }
-
-
-  ngOnInit() {
-    this.profesoresService.retornar()
-      .subscribe( result =>  this.profesores = result)
-  }
-
+  list=[
+    {
+      number: '1',
+      name: 'MONITOR',
+      icon: 'fas fa-sharp fa-solid fa-desktop text-light fa-3x',
+      direccion: '/editorMonitor',
+    },
+    {
+      number: '2',
+      name: 'ESPACIO DIDÁCTICO',
+      icon: 'fas fa-sharp fa-solid fa-book text-light fa-3x',
+      direccion: '/ed',
+    },
+    {
+      number: '3',
+      name: 'PERFIL',
+      icon: 'fas fa-solid fa-user text-light fa-3x',
+      direccion: '/perfil',
+    },
+    {
+      number: '4',
+      name: 'LISTAS',
+      icon: 'fas fa-thin fa-list text-light fa-3x',
+      direccion: '/homeAdmin',
+    },
+    {
+      number: '5',
+      name: 'CERRAR SESIÓN',
+      icon: 'fas fa-sign-out-alt text-light fa-3x',
+      direccion: '/login',
+    },
+  ]
 }

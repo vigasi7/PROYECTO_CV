@@ -1,0 +1,16 @@
+
+
+.btn-secondary{
+  background-color: #07553E;
+  border: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  width: 20%;
+}
+
+#dropdownMenuButton{
+  font-size: 25px;
+}

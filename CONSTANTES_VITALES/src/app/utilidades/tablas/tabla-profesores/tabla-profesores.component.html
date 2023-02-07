@@ -1,0 +1,28 @@
+
+
+  <table class="table table-success table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">DNI Profesor</th>
+      <th scope="col">Nombre Profesor</th>
+      <th scope="col">Apellidos Profesor</th>
+      <th scope="col">Rol</th>
+      <th scope="col">Nombre Ciclo</th>
+      <th scope="col">Email Profesor</th>
+      <th scope="col">Teléfono Profesor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let prof of profesores">
+      <td>{{prof.dniProfesor}}</td>
+      <td>{{prof.nombreProfesor}}</td>
+      <td>{{prof.apellidosPersona}}</td>
+      <td>{{prof.rol}}</td>
+      <td>{{prof.nombreCiclo}}</td>
+      <td>{{prof.emailProfesor}}</td>
+      <td>{{prof.telefonoProfesor}}</td>
+    </tr>
+  </tbody>
+</table>
+
+

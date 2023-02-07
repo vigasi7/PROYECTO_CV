@@ -1,0 +1,84 @@
+.fa-bars{
+  font-size: 30px;
+}
+
+.btn-close{
+  background-color:  rgb(26, 161, 121);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+}
+
+.btn-primary{
+  background-color:  #07553E;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+}
+
+button:hover{
+  background-color: rgb(54, 172, 144);
+}
+
+.offcanvas-title{
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offcanvas{
+  background-color: #07553E;
+  color: white;
+}
+
+.img_user{
+  border: 1px solid white;
+  width: 30%;
+  height: 20%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-image: url(foto_usuario.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p{
+  margin-top: -10%;
+  margin-bottom: 0;
+}
+
+.nav-list-item{
+  border: 1px white;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.icons{
+  display: contents;
+  height: 10px;
+  width: 10px;
+  margin-right: 2%;
+}
+
+.opc_menu{
+  margin-left: 10%;
+}

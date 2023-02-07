@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-perfiles-monitor',
+  selector: 'perfiles-monitor',
   templateUrl: './perfiles-monitor.component.html',
   styleUrls: ['./perfiles-monitor.component.css']
 })

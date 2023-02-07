@@ -1,0 +1,14 @@
+.tit-edit{
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.editor-monitor{
+  height: 370px;
+  background-color: white;
+}

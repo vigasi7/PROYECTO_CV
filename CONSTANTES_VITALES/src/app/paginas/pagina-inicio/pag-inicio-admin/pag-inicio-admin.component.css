@@ -1,0 +1,33 @@
+
+
+.btn-princ{
+  background-color: #07553E;
+  border: none;
+  width: 500px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-cs{
+  background-color: rgba(7, 85, 62, 0.5);
+  border: none;
+  width: 500px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pag_inicio{
+  position: relative;
+}

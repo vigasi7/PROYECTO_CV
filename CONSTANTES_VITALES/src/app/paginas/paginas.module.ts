@@ -8,7 +8,10 @@ import { PerfilUsuarioModule } from './perfil-usuario/perfil-usuario.module';
 import { PaginaInicioModule } from './pagina-inicio/pagina-inicio.module';
 
 
+
 import { UtilidadesModule } from '../utilidades/utilidades.module';
+import { VistaTablasModule } from './vista-tablas/vista-tablas.module';
+import { TablasModule } from '../utilidades/tablas/tablas.module';
 
 
 @NgModule({
@@ -17,14 +20,16 @@ import { UtilidadesModule } from '../utilidades/utilidades.module';
     MonitorModule,
     EspacioDidacticoModule,
     PerfilUsuarioModule,
-    PaginaInicioModule
+    PaginaInicioModule,
+    VistaTablasModule
   ],
   declarations: [
 
   ],
   imports: [
     CommonModule,
-    UtilidadesModule
+    UtilidadesModule,
+    TablasModule
   ]
 })
 export class PaginasModule { }

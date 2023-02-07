@@ -3,7 +3,13 @@
   <input type="text" name="email" id="form-email" placeholder="Email"><br><br>
   <input type="password" name="contraseñas" id="form-contraseña" placeholder="Contraseña"><br><br>
   <a href="/home">
-    <button type="submit" id="btn-entrar">Entrar</button>
+    <button type="submit" id="btn-entrar">Entrar/Alumno</button>
+  </a><br>
+  <a href="/homeAdmin">
+    <button type="submit" id="btn-entrar">Entrar/ Profesor</button>
+  </a><br>
+  <a href="/homeAdmin">
+    <button type="submit" id="btn-entrar">Entrar/Admin</button>
   </a><br>
   <hr> <br>
   <a href="/home" class="olv-con">¿Has olvidado tu contraseña?</a><br>
@@ -19,7 +25,7 @@
       id="profile-img"
       src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
       class="profile-img-card"
-    />
+    >
     <form
       *ngIf="!isLoggedIn"
       name="form"
@@ -33,16 +39,16 @@
           type="text"
           class="form-control"
           name="username"
-          [(ngModel)]="form.username"
+          [(ngModel)]="form.emailProfesor"
           required
-          #username="ngModel"
-        />
+          #emailProfesor="ngModel"
+        >
         <div
           class="alert alert-danger"
           role="alert"
-          *ngIf="username.errors && f.submitted"
+          *ngIf="emailProfesor.errors && f.submitted"
         >
-          Username is required!
+          Email is required!
         </div>
       </div>
       <div class="form-group">
@@ -51,18 +57,18 @@
           type="password"
           class="form-control"
           name="password"
-          [(ngModel)]="form.password"
+          [(ngModel)]="form.passwordProfesor"
           required
           minlength="6"
-          #password="ngModel"
-        />
+          #passwordProfesor="ngModel"
+        >
         <div
           class="alert alert-danger"
           role="alert"
-          *ngIf="password.errors && f.submitted"
+          *ngIf="passwordProfesor.errors && f.submitted"
         >
-          <div *ngIf="password.errors.required">Password is required</div>
-          <div *ngIf="password.errors.minlength">
+          <div *ngIf="passwordProfesor.errors.required">Password is required</div>
+          <div *ngIf="passwordProfesor.errors.minlength">
             Password must be at least 6 characters
           </div>
         </div>

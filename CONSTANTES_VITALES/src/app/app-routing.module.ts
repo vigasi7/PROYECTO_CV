@@ -12,6 +12,7 @@ import { CambiarPassComponent } from './paginas/perfil-usuario/cambiar-pass/camb
 import { EdAlumnoComponent } from './paginas/espacio-didactico/ed-alumno/ed-alumno.component';
 import { VistaTablaProfesoresComponent } from './paginas/vista-tablas/vista-tabla-profesores/vista-tabla-profesores.component';
 import { EditorMonitorProfesorComponent } from './paginas/monitor/editor-monitor-profesor/editor-monitor-profesor.component';
+import { VistaTablaAlumnosComponent } from './paginas/vista-tablas/vista-tabla-alumnos/vista-tabla-alumnos.component';
 
 
 const routes: Routes = [{
@@ -29,6 +30,7 @@ const routes: Routes = [{
 {path: 'monitor', component: MonitorAlumnoComponent},
 {path: 'ed', component: EdAlumnoComponent},
 {path: 'tablaProfesores', component: VistaTablaProfesoresComponent},
+{path: 'tablaAlumnos', component: VistaTablaAlumnosComponent},
 {path: 'editorMonitor', component: EditorMonitorProfesorComponent}
 ];
 

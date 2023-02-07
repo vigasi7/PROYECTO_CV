@@ -1,1 +1,26 @@
-<p>tabla-alumnos works!</p>
+
+
+  <table class="table table-success table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">DNI Profesor</th>
+        <th scope="col">Nombre Profesor</th>
+        <th scope="col">Apellidos Profesor</th>
+        <th scope="col">Rol</th>
+        <th scope="col">Nombre Ciclo</th>
+        <th scope="col">Email Profesor</th>
+        <th scope="col">Teléfono Profesor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let alum of alumnos">
+        <td>{{alum.dniProfesor}}</td>
+        <td>{{alum.nombreProfesor}}</td>
+        <td>{{alum.apellidosPersona}}</td>
+        <td>{{alum.rol}}</td>
+        <td>{{alum.nombreCiclo}}</td>
+        <td>{{alum.emailProfesor}}</td>
+        <td>{{alum.telefonoProfesor}}</td>
+      </tr>
+    </tbody>
+  </table>

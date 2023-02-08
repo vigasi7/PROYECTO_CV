@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 25-01-2023 a las 20:16:58
+-- Tiempo de generación: 08-02-2023 a las 08:48:09
 -- Versión del servidor: 8.0.30
 -- Versión de PHP: 8.1.10
 
@@ -28,16 +28,26 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `alumnos` (
-  `dniAlumno` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `dniAlumno` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `nombreAlumno` varchar(200) NOT NULL,
   `apellidosAlumnos` varchar(200) NOT NULL,
   `nia` varchar(15) NOT NULL,
-  `nombreCiclo` enum('TCAE','TES') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `emailAlumno` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `emailAlumno` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `passwordAlumno` varchar(20) NOT NULL,
-  `telefonoAlumno` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `telefonoAlumno` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `codigoCiclo` varchar(15) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Volcado de datos para la tabla `alumnos`
+--
+
+INSERT INTO `alumnos` (`dniAlumno`, `nombreAlumno`, `apellidosAlumnos`, `nia`, `emailAlumno`, `passwordAlumno`, `telefonoAlumno`, `codigoCiclo`) VALUES
+('14785258A', 'fff', 'rrr', '233455', 'dfdg@gmail.com', 'rrrrr', '32569874', '2'),
+('25896314L', 'bbbbA', 'rregre', '5', 'ff@fhjk.com', 'rgre', '22558471', '1'),
+('33456765K', 'v', 'gg', '432', 'vgg@Gmail.com', 'vgg', '3215', '1'),
+('55684907R', 'r', 'cc', '3332123', 'rcc2gmail.com', 'rcc', '66666666', '1'),
+('99999988D', 'j', 'mm', '876', 'j@gmail.com', 'jmm', '888888888', '2');
 
 -- --------------------------------------------------------
 
@@ -47,8 +57,16 @@ CREATE TABLE `alumnos` (
 
 CREATE TABLE `ciclos` (
   `codigoCiclo` varchar(15) NOT NULL,
-  `nombreCiclo` enum('TCAE','TES') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `nombreCiclo` enum('TCAE','TES') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Volcado de datos para la tabla `ciclos`
+--
+
+INSERT INTO `ciclos` (`codigoCiclo`, `nombreCiclo`) VALUES
+('1', 'TES'),
+('2', 'TCAE');
 
 -- --------------------------------------------------------
 
@@ -57,11 +75,11 @@ CREATE TABLE `ciclos` (
 --
 
 CREATE TABLE `consultar_espacio_didacticos` (
-  `dniAlumno` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `dniAlumno` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `idContenido` int NOT NULL,
   `fecha` date NOT NULL,
   `permiso` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -70,10 +88,10 @@ CREATE TABLE `consultar_espacio_didacticos` (
 --
 
 CREATE TABLE `consultar_monitors` (
-  `dniAlumno` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `dniAlumno` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `idMonitor` int NOT NULL,
   `fecha` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -86,8 +104,9 @@ CREATE TABLE `espacio_didacticos` (
   `tipoContenido` varchar(20) NOT NULL,
   `tituloContenido` varchar(200) NOT NULL,
   `fecha` date NOT NULL,
-  `dniProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `dniProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `archivo` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -96,10 +115,10 @@ CREATE TABLE `espacio_didacticos` (
 --
 
 CREATE TABLE `impartir` (
-  `dniProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `dniProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `codigoCiclo` varchar(15) NOT NULL,
   `fecha` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -115,9 +134,9 @@ CREATE TABLE `monitors` (
   `tensionASistolica` int NOT NULL,
   `tensionADiastolica` int NOT NULL,
   `concentracionCO2` int NOT NULL,
-  `dniProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `dniProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `claveMonitor` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -126,15 +145,15 @@ CREATE TABLE `monitors` (
 --
 
 CREATE TABLE `profesors` (
-  `dniProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `dniProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `nombreProfesor` varchar(200) NOT NULL,
   `apellidosPersona` varchar(200) NOT NULL,
-  `rol` enum('profesorAdmin','profesor') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `nombreCiclo` enum('TCAE','TES') NOT NULL,
-  `emailProfesor` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `passwordProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `telefonoProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `rol` enum('profesorAdmin','profesor') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `nombreCiclo` enum('TCAE','TES','Ambos') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `emailProfesor` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `passwordProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `telefonoProfesor` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Volcado de datos para la tabla `profesors`

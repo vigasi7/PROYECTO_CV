@@ -23,7 +23,7 @@ const routes: Routes = [{
 
 {path: 'login', component: LoginComponent},
 {path: 'home', component: PaginaInicioComponent},
-{path: 'homeAdmin', component: PagInicioAdminComponent},
+{path: 'tablas', component: PagInicioAdminComponent},
 {path: 'perfil', component: DatosPerfilComponent},
 {path: 'cambiarContraseña', component: CambiarPassComponent},
 {path: 'monitorCodigo', component: CodigoMonitorAlumnoComponent},

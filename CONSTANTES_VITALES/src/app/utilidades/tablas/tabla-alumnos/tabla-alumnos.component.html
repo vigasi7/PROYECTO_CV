@@ -3,24 +3,24 @@
   <table class="table table-success table-striped table-hover">
     <thead>
       <tr>
-        <th scope="col">DNI Profesor</th>
-        <th scope="col">Nombre Profesor</th>
-        <th scope="col">Apellidos Profesor</th>
-        <th scope="col">Rol</th>
+        <th scope="col">DNI Alumno</th>
+        <th scope="col">Nombre Alumno</th>
+        <th scope="col">Apellidos Alumno</th>
+        <th scope="col">NIA</th>
         <th scope="col">Nombre Ciclo</th>
-        <th scope="col">Email Profesor</th>
-        <th scope="col">Teléfono Profesor</th>
+        <th scope="col">Email Alumno</th>
+        <th scope="col">Teléfono Alumno</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let alum of alumnos">
-        <td>{{alum.dniProfesor}}</td>
-        <td>{{alum.nombreProfesor}}</td>
-        <td>{{alum.apellidosPersona}}</td>
-        <td>{{alum.rol}}</td>
+        <td>{{alum.dniAlumno}}</td>
+        <td>{{alum.nombreAlumno}}</td>
+        <td>{{alum.apellidosAlumnos}}</td>
+        <td>{{alum.nia}}</td>
         <td>{{alum.nombreCiclo}}</td>
-        <td>{{alum.emailProfesor}}</td>
-        <td>{{alum.telefonoProfesor}}</td>
+        <td>{{alum.emailAlumno}}</td>
+        <td>{{alum.telefonoAlumno}}</td>
       </tr>
     </tbody>
   </table>

@@ -9,6 +9,6 @@ export class AlumnosService {
   constructor(private http: HttpClient) { }
 
   retornar() {
-    return this.http.get("http://localhost/proyecto_cv/cv/public/api/listaAlumnos");
+    return this.http.get("http://localhost/constantes_vitales/public/api/alumnos") || this.http.get("http://localhost/proyecto_cv/cv/public/api/listaProfesores");
   }
 }

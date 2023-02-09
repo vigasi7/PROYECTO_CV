@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 import { UtilidadesModule } from './utilidades/utilidades.module';
 import { PaginasModule } from "./paginas/paginas.module";
 
+import { authInterceptorProviders } from './_helpers/auth.interceptor';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,7 @@ import { PaginasModule } from "./paginas/paginas.module";
     UtilidadesModule,
     PaginasModule
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent],
   exports: [PaginasModule]
 })

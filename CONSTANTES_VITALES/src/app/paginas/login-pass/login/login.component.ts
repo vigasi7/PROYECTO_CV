@@ -10,7 +10,7 @@ import { TokenStorageService } from '../../../_services/token-storage.service';
 export class LoginComponent implements OnInit {
   form: any = {
     emailProfesor: null,
-    passwordProfesor: null
+    password: null
   };
   isLoggedIn = false;
   isLoginFailed = false;

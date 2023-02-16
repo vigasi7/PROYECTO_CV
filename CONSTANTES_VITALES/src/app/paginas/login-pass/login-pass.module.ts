@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { EmailComponent } from './email/email.component';
 import { PassNuevaComponent } from './pass-nueva/pass-nueva.component';
 import { UtilidadesModule } from 'src/app/utilidades/utilidades.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +16,8 @@ import { UtilidadesModule } from 'src/app/utilidades/utilidades.module';
   ],
   imports: [
     CommonModule,
-    UtilidadesModule
+    UtilidadesModule,
+    FormsModule //LUIS
   ]
 })
 export class LoginPassModule { }

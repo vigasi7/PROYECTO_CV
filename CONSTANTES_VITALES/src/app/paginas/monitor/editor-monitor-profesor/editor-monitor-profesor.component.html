@@ -5,7 +5,64 @@
 <perfiles-monitor></perfiles-monitor>
 
 <br>
-
+<br>
 <div class="editor-monitor">
+  <br>
+  <a href="editorMonitor" class="act-mon btn btn-secondary" type="button">Actualizar monitor</a>
+  <!-- <div class="FC">
+    <i class="nom-fc">FC</i>
+    <input type="range" class="form-range" id="customRange1" min="0" max="100">
+    <label id="valor-range"></label>
+  </div> -->
 
+  <form onchange="output.value=parseInt(rangeField.value)" oninput="changeVar(rangeField.value,rangeField.min, rangeField.max)">
+    <label class="sliderBar">
+      <i class="fc">FC</i>
+      <input id="rangeField" class="fc-lin" type="range" list="mydata" min="50" max="140" value="0" step="1">
+      <output id="output" value="0">0 </output> bpm
+    </label>
+  </form>
+
+  <!-- <div class="SatO2">
+    <i class="nom-satO2">SatO2</i>
+    <input type="range" class="form-range" id="customRange1" min="0" max="100">
+    <label id="valor-range"></label>
+  </div> -->
+
+  <form onchange="output.value=parseInt(rangeField.value)" oninput="changeVar(rangeField.value,rangeField.min, rangeField.max)">
+    <label class="sliderBar">
+      <i class="sat">Sat O2</i>
+      <input id="rangeField" class="sat-lin" type="range" list="mydata" min="89" max="100" value="0" step="1">
+      <output id="output" value="0">0 </output> %
+    </label>
+  </form>
+
+  <form onchange="output.value=parseInt(rangeField.value)" oninput="changeVar(rangeField.value,rangeField.min, rangeField.max)">
+    <label class="sliderBar">
+      <i class="ta-s">S</i>
+      <input id="rangeField" class="ta-s-lin" type="range" list="mydata" min="75" max="130" value="0" step="1">
+      <output id="output" value="00">0 </output> mmHg
+    </label>
+  </form>
+  <i class="ta">TA</i>
+  <form onchange="output.value=parseInt(rangeField.value)" oninput="changeVar(rangeField.value,rangeField.min, rangeField.max)" class="d">
+    <label class="sliderBar">
+      <i class="ta-d">D</i>
+      <input id="rangeField" class="ta-s-lin" type="range" list="mydata" min="75" max="130" value="0" step="1">
+      <output id="output" value="00">0 </output> mmHg
+    </label>
+  </form>
+  <form onchange="output.value=parseInt(rangeField.value)" oninput="changeVar(rangeField.value,rangeField.min, rangeField.max)" class="form_co2">
+    <label class="sliderBar">
+      <i class="co2">CO2</i>
+      <input id="rangeField" class="co2-lin" type="range" list="mydata" min="89" max="100" value="0" step="1">
+      <output id="output" value="0">0 </output> %
+    </label>
+  </form>
+
+</div>
+<div class="botones-inf">
+  <button class="ver-mon btn btn-secondary">VER MONITOR</button>
+  <button class="ver-mon btn btn-secondary">CERRAR MONITOR</button>
+  <button class="ver-mon btn btn-secondary">GUARDAR</button>
 </div>

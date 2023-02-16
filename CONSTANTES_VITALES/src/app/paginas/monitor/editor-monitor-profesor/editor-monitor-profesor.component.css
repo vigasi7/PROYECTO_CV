@@ -9,6 +9,96 @@
 }
 
 .editor-monitor{
-  height: 370px;
+  height: 100%;
   background-color: white;
+}
+
+.act-mon{
+  text-decoration: none;
+  color: white;
+  background-color: #07553E;
+  border: none;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 15%;
+  text-align: center;
+}
+
+form{
+  margin-top: 2%;
+  color: #07553E;
+}
+
+.sliderBar{
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  width: 90%;
+  margin-left: 2%;
+}
+
+.fc-lin{
+  margin-left: 15%;
+  margin-right: 10%;
+  width: 63%;
+}
+.sat-lin{
+  margin-left: 11%;
+  margin-right: 10%;
+  width: 64%;
+}
+.ta-s-lin{
+  margin-left: 9%;
+  margin-right: 10%;
+  width: 64%;
+}
+.ta-s{
+  margin-left: 7%;
+}
+.ta-d{
+  margin-left: 7%;
+}
+.d{
+  margin-top: 0;
+}
+.ta{
+  margin-left: 2%;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  color: #07553E;
+}
+.co2-lin{
+  margin-left: 14%;
+  margin-right: 10%;
+  width: 64%;
+}
+.form_co2{
+  padding-bottom: 3%;
+}
+
+output{
+  color: antiquewhite;
+  background-color: #07553E;
+}
+
+.botones-inf{
+  margin-top: 2%;
+  display: flex;
+}
+
+.ver-mon{
+  text-decoration: none;
+  color: white;
+  background-color: #07553E;
+  border: none;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 155px;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
 }

@@ -40,3 +40,12 @@ const routes: Routes = [{
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+// git remote add origin https://github.com/Vigasi79/Proyecto.git
+// git commit -m "Version1"
+// git config --global user.name "Víctor Gadea"
+// git config --global user.email "vigasi79@gmail.com"
+// git add *
+// git commit -m "Creado el proyecto inicial"
+// git init
+// git remoto agregar origen https://github.com/Vigasi79/Proyecto.git

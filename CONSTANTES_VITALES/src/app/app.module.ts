@@ -16,7 +16,7 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +37,6 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent],
-  exports: [PaginasModule]
+  exports: [PaginasModule, FormsModule] //Luis
 })
 export class AppModule { }

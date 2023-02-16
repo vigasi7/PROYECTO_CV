@@ -33,7 +33,7 @@ export class MenuLateralAdminComponent {
       number: '4',
       name: 'LISTAS',
       icon: 'fas fa-thin fa-list text-light fa-3x',
-      direccion: '/homeAdmin',
+      direccion: '/tablas',
     },
     {
       number: '5',

@@ -12,6 +12,7 @@ import { PaginaInicioModule } from './pagina-inicio/pagina-inicio.module';
 import { UtilidadesModule } from '../utilidades/utilidades.module';
 import { VistaTablasModule } from './vista-tablas/vista-tablas.module';
 import { TablasModule } from '../utilidades/tablas/tablas.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { TablasModule } from '../utilidades/tablas/tablas.module';
   imports: [
     CommonModule,
     UtilidadesModule,
-    TablasModule
+    TablasModule,
+    FormsModule //Luis
   ]
 })
 export class PaginasModule { }

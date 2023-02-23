@@ -6,6 +6,7 @@ import { VerEdProfesorComponent } from './ver-ed-profesor/ver-ed-profesor.compon
 import { VerEdAlumnoComponent } from './ver-ed-alumno/ver-ed-alumno.component';
 import { EditorEdProfesorComponent } from './editor-ed-profesor/editor-ed-profesor.component';
 import { UtilidadesModule } from 'src/app/utilidades/utilidades.module';
+import { DatosEDComponent } from './datos-ed/datos-ed.component';
 
 
 
@@ -15,7 +16,8 @@ import { UtilidadesModule } from 'src/app/utilidades/utilidades.module';
     EdProfesorComponent,
     VerEdProfesorComponent,
     VerEdAlumnoComponent,
-    EditorEdProfesorComponent
+    EditorEdProfesorComponent,
+    DatosEDComponent
   ],
   imports: [
     CommonModule,

@@ -9,8 +9,10 @@
   align-items: center;
   margin-top: 2%;
   width: 20%;
+  color: white;
 }
 
 #dropdownMenuButton{
   font-size: 25px;
 }
+

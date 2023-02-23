@@ -35,8 +35,8 @@ form{
   font-size: 30px;
   font-weight: bold;
   display: flex;
-  width: 90%;
-  margin-left: 2%;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .fc-lin{
@@ -45,9 +45,12 @@ form{
   width: 63%;
 }
 .sat-lin{
-  margin-left: 11%;
-  margin-right: 10%;
+  margin-left: 7%;
+  margin-right: 13%;
   width: 64%;
+}
+.sat{
+  width: 10%;
 }
 .ta-s-lin{
   margin-left: 9%;
@@ -64,7 +67,7 @@ form{
   margin-top: 0;
 }
 .ta{
-  margin-left: 2%;
+  margin-left: 15%;
   font-size: 30px;
   font-weight: bold;
   display: flex;

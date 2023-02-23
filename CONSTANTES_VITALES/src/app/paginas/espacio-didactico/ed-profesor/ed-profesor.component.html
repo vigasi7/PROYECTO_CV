@@ -1,1 +1,35 @@
-<p>ed-profesor works!</p>
+<menu-lateral-admin></menu-lateral-admin>
+
+<!-- <table class="table table-success table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">DNI Profesor</th>
+      <th scope="col">Nombre Profesor</th>
+      <th scope="col">Apellidos Profesor</th>
+      <th scope="col">Rol</th>
+      <th scope="col">Nombre Ciclo</th>
+      <th scope="col">Email Profesor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let espdid of ed">
+      <td>{{espdid.idContenido}}</td>
+      <td>{{espdid.tipoContenido}}</td>
+      <td>{{espdid.tituloContenido}}</td>
+      <td>{{espdid.fecha}}</td>
+      <td>{{espdid.dniProfesor}}</td>
+      <td>{{espdid.archivo}}</td>
+    </tr>
+  </tbody>
+</table> -->
+<div class="menu-ed">
+  <div class="cuadrados" *ngFor="let espdid of ed">
+    <i class="fas fa-solid fa-eye fa-2x ojo"></i>
+    <td class="fecha" id="cont">{{espdid.fecha}}</td><br>
+    <a id="cont">Nombre Archivo:</a><br>
+    <i class="tituloContenido" id="cont">{{espdid.tituloContenido}}</i><br><br>
+    <a id="cont">Formato Archivo:</a><br>
+    <i class="tipoContenido" id="cont">{{espdid.tipoContenido}}</i>
+  </div>
+</div>
+

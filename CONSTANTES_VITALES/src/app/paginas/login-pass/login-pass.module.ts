@@ -7,7 +7,6 @@ import { UtilidadesModule } from 'src/app/utilidades/utilidades.module';
 import { FormsModule } from '@angular/forms';
 
 
-
 @NgModule({
   declarations: [
     LoginComponent,
@@ -17,7 +16,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     UtilidadesModule,
-    FormsModule //LUIS
+    FormsModule, //LUIS
   ]
 })
 export class LoginPassModule { }

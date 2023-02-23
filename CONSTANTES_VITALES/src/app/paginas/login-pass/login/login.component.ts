@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
         // this.roles = this.tokenStorage.getUser().roles;
         this.reloadPage();
 
-        this.router.navigate(['home']);
+        // this.router.navigate(['home']);
       },
       err => {
         this.errorMessage = err.error.message;
@@ -50,6 +50,7 @@ export class LoginComponent implements OnInit {
   }
 
   reloadPage(): void {
+    // this.router.navigate(['tablas']);
     window.location.reload();
   }
 }

@@ -50,7 +50,6 @@ export class LoginComponent implements OnInit {
   }
 
   reloadPage(): void {
-    // this.router.navigate(['tablas']);
     window.location.reload();
   }
 }
